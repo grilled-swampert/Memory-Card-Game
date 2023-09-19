@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for(let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'perspective-dice-six-faces-random.png')
+            card.setAttribute('src', 'images/perspective-dice-six-faces-random.png')
             card.setAttribute('data-id', i)
             card.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.8)'; 
             card.addEventListener('click', flipCard)
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addClickEvent(cards) {
         cards.forEach(card => {
-            if (card.getAttribute('src') === 'perspective-dice-six-faces-random.png') {
+            if (card.getAttribute('src') === 'images/perspective-dice-six-faces-random.png') {
                 card.addEventListener('click', flipCard);
             }
         });
@@ -108,16 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 cards[optionOneId].style.boxShadow = 'none';
                 cards[optionTwoId].style.boxShadow = 'none';
-                cards[optionOneId].setAttribute('src', 'transparent-tile.png');
-                cards[optionTwoId].setAttribute('src', 'transparent-tile.png');
+                cards[optionOneId].setAttribute('src', 'images/transparent-tile.png');
+                cards[optionTwoId].setAttribute('src', 'images/transparent-tile.png');
                 addClickEvent(cards);
             }, 1000);
         } else {
             setTimeout(() => {
                 score -= 1; // seduct 1 point for an incorrect match
                 resultDisplay.textContent = score;
-                cards[optionOneId].setAttribute('src', 'perspective-dice-six-faces-random.png');
-                cards[optionTwoId].setAttribute('src', 'perspective-dice-six-faces-random.png');
+                cards[optionOneId].setAttribute('src', 'images/perspective-dice-six-faces-random.png');
+                cards[optionTwoId].setAttribute('src', 'images/perspective-dice-six-faces-random.png');
                 addClickEvent(cards);
             }, 1000); // sdjust the delay time as needed
         }
