@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- english language -->
+<head>
+    <meta charset="UTF-8"> <!-- specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- i mean, its responsive -->
+    <title>Draining Energy</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="game.js" charset="utf-8"></script>
+</head>
+<body>
+    <!-- layers of the board -->
+    <div class="box01"></div> 
+    <div class="box02"></div>
+    <div class="grid"></div>
+    <h3 id="labelScore"> 
+        <span id="title">HIGHSCORE</span>
+        <div class="horizontal-line"></div>
+    </h3>
+    <p class="label-highscore"><span id="highscore"></span></p>
+    <!-- plays the score, span element contains the actual score -->
+    <h3 id="score">SCORE :ㅤ<span id="result"></span></h3>
+    <!-- used to display game'selapsed time -->
+    <h3 id="timeTile">TIME : <span id="time"></span></h3>
+    <!-- when clicked, reloads the entire web page -->
+    <button id="restartButton" onClick="window.location.reload();">RESTART</button>
+</body>
+</html>
