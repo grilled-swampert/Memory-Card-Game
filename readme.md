@@ -1,4 +1,3 @@
-Link to the game: https://memory-card-game-p5td.vercel.app/
 
 Memory cards are like a fascinating riddle from the past. They come in pairs, just like Bert and Ernie, or bacon and eggs. 
 The objective of our memory card game is quite simple, your job is to turn over two cards at a time and try to find the matching pairs. When you find a pair, you score. And when all the pairs are found, you win!
